@@ -7,10 +7,8 @@
 namespace JEngine.Examples
 {
     [System.Serializable]
-    [global::ProtoBuf.ProtoContract()]
     public partial class DataClass
     {
-        [global::ProtoBuf.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int id
         {
@@ -21,7 +19,6 @@ namespace JEngine.Examples
         public void Resetid() => __pbn__id = null;
         private int? __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -32,7 +29,6 @@ namespace JEngine.Examples
         public void Resetname() => __pbn__name = null;
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(0)]
         public long money
         {
@@ -43,7 +39,6 @@ namespace JEngine.Examples
         public void Resetmoney() => __pbn__money = null;
         private long? __pbn__money;
 
-        [global::ProtoBuf.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool gm
         {
@@ -54,8 +49,6 @@ namespace JEngine.Examples
         public void Resetgm() => __pbn__gm = null;
         private bool? __pbn__gm;
 
-        [global::ProtoBuf.ProtoMember(5, TypeName = "JEngine.Examples.DataClass.DataEntry")]
-        [global::ProtoBuf.ProtoMap]
         public global::System.Collections.Generic.Dictionary<string, string> data = new global::System.Collections.Generic.Dictionary<string, string>();
 
     }

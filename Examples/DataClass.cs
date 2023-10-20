@@ -24,7 +24,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 using JEngine.Core;
-using JEngine.Misc;
 namespace JEngine.Examples
 {
     public partial class DataClass
@@ -41,22 +40,8 @@ namespace JEngine.Examples
             set
             {
                 money = value;
-                if (BindableMoney != null)
-                {
-                    BindableMoney.Value = value;
-                }
-                else
-                {
-                    BindableMoney = new BindableProperty<long>(value);
-                }
             }
         }
-
-        /*
-        * Fields to bind
-        */
-        public BindableProperty<long> BindableMoney = new BindableProperty<long>(0);
-
 
         public void Awake()
         {

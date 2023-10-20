@@ -27,11 +27,10 @@ using System;
 namespace JEngine.Examples.Data
 {
     [System.Serializable]
-    [global::ProtoBuf.ProtoContract()]
     public class HotData
     {
-        [global::ProtoBuf.ProtoMember(1)] public int v;
-        [global::ProtoBuf.ProtoMember(2)] public string k;
+        public int v;
+        public string k;
 
         public override string ToString()
         {
